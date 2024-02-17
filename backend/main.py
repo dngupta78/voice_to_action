@@ -1,4 +1,4 @@
-from api.endpoints import audio_to_text
+from api.endpoints import audio_to_text, sentiment_analysis
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 # from mangum import Mangum
@@ -23,4 +23,5 @@ def index():
     return "To access the APIs, Please add '/docs' at the end of the URL."
 
 
-app.include_router(audio_to_text.router, prefix="/v1")
+app.include_router(audio_to_text.router, prefix="")
+app.include_router(sentiment_analysis.router, prefix="")
