@@ -1,4 +1,4 @@
-from api.endpoints import audio_to_text, sentiment_analysis
+from api.endpoints import audio_to_text, sentiment_analysis, jokes, news
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 # from mangum import Mangum
@@ -25,3 +25,5 @@ def index():
 
 app.include_router(audio_to_text.router, prefix="")
 app.include_router(sentiment_analysis.router, prefix="")
+app.include_router(jokes.router, prefix="")
+app.include_router(news.router, prefix="")
