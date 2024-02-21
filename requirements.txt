@@ -6,16 +6,4 @@ PyAudio
 uvicorn
 pyjokes
 newsapi-python
-
-# MOM from Problem statement regarding call
-1- we just need to convert audio to text and then speaker will reply based on patient question.
-
-2- No need use any hardware or any model just need to utilise the labelled data and need to input this categories into speaker or device.
-
-3- other verbal conversation between speaker and patient no involvement of doctor 
-
-4- Data should be reliable and stored in databases.
- 
-5- We just need to create prototype and fix the variables hardcoded based on general specifications and daily routine checkup .
-
-6- The speaker will not suggest the prescriptions and doctor will check the patients response after the conversation.
+gtts-2.5.1
