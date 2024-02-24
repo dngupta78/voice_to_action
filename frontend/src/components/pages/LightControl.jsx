@@ -1,4 +1,3 @@
-// LightControl.js
 import React, { useState } from 'react';
 import "./LightControl.css";
 import light_on from '../../assets/bulb_on.png';
@@ -9,14 +8,6 @@ const LightControl = () => {
 
   const toggleLight = () => {
     setIsLightOn(prevState => !prevState);
-  };
-
-  const turnOnLight = () => {
-    setIsLightOn(true);
-  };
-
-  const turnOffLight = () => {
-    setIsLightOn(false);
   };
 
   return (
@@ -30,10 +21,10 @@ const LightControl = () => {
           className="light-bulb"
         />
       </div>
-      <span>{isLightOn ? 'On' : 'Off'}</span>
       <div className="button-group">
-        <button onClick={turnOnLight}>Turn On</button>
-        <button onClick={turnOffLight}>Turn Off</button>
+        <button onClick={toggleLight}>
+          {isLightOn ? 'Turn Off' : 'Turn On'}
+        </button>
       </div>
     </div>
   );
