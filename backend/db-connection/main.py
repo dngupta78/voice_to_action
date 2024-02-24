@@ -1,4 +1,3 @@
-[2:10 AM] Balavva Mirji
 from pymongo import MongoClient
  
 client = MongoClient('mongodb://localhost:27017/')
