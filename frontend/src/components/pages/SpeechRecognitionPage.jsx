@@ -1,4 +1,3 @@
-// SpeechRecognitionPage.js
 import React, { useState } from 'react';
 import { ReactMic } from 'react-mic';
 import './SpeechRecognitionPage.css'; // Import CSS file
@@ -6,6 +5,14 @@ import './SpeechRecognitionPage.css'; // Import CSS file
 const SpeechRecognitionPage = () => {
   const [isRecording, setIsRecording] = useState(false);
   const [result, setResult] = useState("");
+
+  const toggleRecording = () => {
+    if (isRecording) {
+      onStopRecording();
+    } else {
+      onStartRecording();
+    }
+  };
 
   const onStartRecording = () => {
     setIsRecording(true);
@@ -55,14 +62,13 @@ const SpeechRecognitionPage = () => {
           backgroundColor="#FF4081"
         />
       </div>
-      <div className="button-container">
-        <button onClick={onStartRecording} disabled={isRecording}>
-          Start Recording
-        </button>
-        <button onClick={onStopRecording} disabled={!isRecording}>
-          Stop Recording
-        </button>
-        <p className="result-text">{result}</p>
+      <div>
+        <div className="button-container">
+          <button onClick={toggleRecording}>
+            {isRecording ? 'Stop Recording' : 'Start Recording'}
+          </button>
+          <p className="result-text">{result}</p>
+        </div>
       </div>
     </div>
   );

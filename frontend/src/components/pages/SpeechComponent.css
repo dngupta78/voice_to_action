@@ -1,0 +1,14 @@
+.speech-component-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Add this line to set the background color */
+  }

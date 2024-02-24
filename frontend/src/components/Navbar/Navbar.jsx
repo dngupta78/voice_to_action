@@ -17,7 +17,7 @@ const toggle_mode = ()=>{
         <img src={theme == 'light' ? logo_light : logo_light} alt="" className='logo'/>
         <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/speechToText">Speech to text</Link>
@@ -26,7 +26,7 @@ const toggle_mode = ()=>{
               <Link to="/IOT">IOT</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
               <Link to="/register">Register</Link>
