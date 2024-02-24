@@ -1,0 +1,56 @@
+/* SpeechRecognitionPage.css */
+
+/* Container styling */
+.speech-recognition-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  /* Sound wave container styling */
+  .sound-wave-container {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  /* Sound wave styling */
+  .sound-wave {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Button container styling */
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Button styling */
+  .button-container button {
+    margin: 0 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Result text styling */
+  .result-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  

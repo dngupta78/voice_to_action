@@ -1,0 +1,45 @@
+/* IOTPage.css */
+
+.iot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .control-card {
+    margin: 20px; /* Adjust spacing between cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease;
+  }
+  
+  .control-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .control-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .control-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .iot-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .control-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
