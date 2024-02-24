@@ -1,9 +1,9 @@
-pydantic~=2.6.1
-fastapi~=0.109.2
-nltk~=3.8.1
-SpeechRecognition~=3.10.1
+pydantic
+fastapi
+nltk
+SpeechRecognition
 PyAudio
 uvicorn
 pyjokes
 newsapi-python
-gtts-2.5.1
+gtts
