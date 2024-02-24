@@ -10,8 +10,8 @@ app = FastAPI()
 
 @router.get("/medilinguaai/", tags=["Bot"])
 def medilinguaai():
-    # text = speech_to_text()
-    text = 'news'
+    text = speech_to_text()
+    # text = 'joke'
     if 'joke' in text:
         response = get_joke()
     elif 'news' in text:
