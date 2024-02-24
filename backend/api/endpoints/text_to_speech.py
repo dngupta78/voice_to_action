@@ -13,6 +13,5 @@ def text_to_audio(text, language='en'):
     os.system("start output.mp3")
 
 
-# Example usage:
-text = "Hello, this is a sample text to be converted into audio."
-text_to_audio(text)
+# text = "Hello, this is a sample text to be converted into audio."
+# text_to_audio(text)
