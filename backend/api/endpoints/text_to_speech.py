@@ -12,6 +12,3 @@ def text_to_audio(text, language='en'):
     tts.save("output.mp3")
     os.system("start output.mp3")
 
-
-# text = "Hello, this is a sample text to be converted into audio."
-# text_to_audio(text)

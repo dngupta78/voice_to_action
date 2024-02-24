@@ -15,7 +15,7 @@ def speech_to_text():
         print("Listening...")
 
         # Adjust for ambient noise levels
-        recognizer.adjust_for_ambient_noise(source)
+        # recognizer.adjust_for_ambient_noise(source)
 
         # Capture audio input from the microphone
         audio = recognizer.listen(source)
@@ -25,6 +25,7 @@ def speech_to_text():
         # Use recognizer to convert speech to text
         text = recognizer.recognize_google(audio)
         print("You said:", text)
+        return text
     except sr.UnknownValueError:
         print("Sorry, I could not understand what you said.")
     except sr.RequestError as e:
